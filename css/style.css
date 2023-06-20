@@ -143,6 +143,7 @@ body {
   font-size: 13px;
   text-transform: uppercase;
 }
+
 .menu__item:hover {
   text-decoration: underline;
 }
@@ -192,7 +193,8 @@ body {
   line-height: 1.2;
 }
 
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
   width: 40px;
   height: 40px;
   border: none;
@@ -463,7 +465,8 @@ ul {
   margin: auto 0;
   padding: 30px 0;
 }
-.img-slider .slick-slide{
+
+.img-slider .slick-slide {
   margin: 8px 0;
 }
 
@@ -613,9 +616,11 @@ ul {
   display: flex;
   font-size: 14px;
 }
+
 .benefits__item .colored {
   font-size: 20px;
 }
+
 .benefits__item:last-child {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -633,7 +638,7 @@ ul {
   margin-top: 38px;
 }
 
-.block__btn  {
+.block__btn {
   padding: 14px 28px;
   display: flex;
   align-items: center;
@@ -642,40 +647,50 @@ ul {
   transition: ease-in .24s color, ease-in .24s background-color, ease-in .24s fill;
   border: 1px solid transparent;
 }
-.block__btn:not(:last-child)  {
+
+.block__btn:not(:last-child) {
   margin-bottom: 12px;
 }
+
 .block__btn.--bordered {
   border: 1px solid #000;
 }
+
 .block__btn.--bordered:hover {
   background-color: #000;
   fill: #fff;
   color: #fff;
 }
+
 .block__btn.--second {
   background-color: #ccd5ea;
 }
+
 .block__btn.--second:hover {
   background-color: #fff;
   border: 1px solid #000;
   fill: #000;
 }
+
 .block__btn.--second svg {
   fill: #fff;
 }
+
 .block__btn.--second:hover svg {
   fill: #000;
 }
+
 .block__btn.--accent {
   background-color: #002d96;
   color: #fff;
 }
+
 .block__btn.--accent:hover {
   background-color: #07215d;
   color: #fff;
 }
-.block__btn.--accent svg{
+
+.block__btn.--accent svg {
   fill: #fff;
 }
 
@@ -700,11 +715,8 @@ ul {
   z-index: -1;
 }
 
-.modal {
-  position: absolute;
-}
-
-.btn-prev, .btn-next {
+.btn-prev,
+.btn-next {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -724,4 +736,66 @@ ul {
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%) rotate(-135deg);
+}
+
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000084;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__wrapper {
+  padding: 32px 28px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.modal__title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.modal__form {
+  margin-top: 40px;
+}
+
+.modal__input {
+  width: 100%;
+}
+
+.modal__input input {
+  border: 1px solid black;
+  font-size: 16px;
+  padding: 20px 18px;
+  width: 100%;
+  outline: none;
+}
+
+.modal__btn {
+  padding: 14px 28px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  transition: ease-in .24s color, ease-in .24s background-color, ease-in .24s fill;
+  border: 1px solid transparent;
+  background-color: #002d96;
+  width: 100%;
+  margin-top: 24px;
+}
+.modal__btn:hover {
+background-color: #07215d;
+}
+.fancybox-content {
+  width: fit-content;
+  height: fit-content;
 }

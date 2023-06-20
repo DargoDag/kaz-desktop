@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   </head>
   <body>
     <header class="header">
@@ -38,7 +39,7 @@
             </div>
             <a href="tel:+77780037686" class="tel__link">+ 7 (778) 003-76-86</a>
           </div>
-          <button class="btn header__btn">Заказать звонок</button>
+          <button class="btn header__btn" data-fancybox href="#modal">Заказать звонок</button>
         </div>
       </div>
       <div class="header__bottom">
@@ -132,7 +133,7 @@
                   <div class="form__input">
                     <input type="tel" placeholder="Номер телефона">
                   </div>
-                  <button class="form__button btn">
+                  <button class="form__button btn" data-fancybox href="#modal">
                     Получить предложение
                     <img src="./img/arrow.svg" alt="#">
                     <div class="form-control">
@@ -289,13 +290,13 @@
               </li>
             </ul>
             <ul class="block__buttons">
-              <li class="block__btn btn --bordered">
+              <li class="block__btn btn --bordered" data-fancybox href="#modal">
                 <span>Записаться на тест-драйв</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.125 18.1738">
                   <path d="M29.75,9.3948,21.5281,1.1735a.8479.8479,0,0,0-.601-.261L20.9124.9119a.8526.8526,0,0,0-.5956.2409.8642.8642,0,0,0-.0027,1.23l6.7618,6.7611H.7316a.8566.8566,0,1,0,0,1.7131H27.0759l-6.7591,6.7591a.8576.8576,0,0,0-.0214,1.2113.8462.8462,0,0,0,.61.2583.8949.8949,0,0,0,.621-.2556l8.2233-8.224A.8587.8587,0,0,0,29.75,9.3948Z" transform="translate(0.125 -0.9119)"/>
                 </svg>
               </li>
-              <li class="block__btn btn --second">
+              <li class="block__btn btn --second" data-fancybox href="#modal">
                 <span>
                   Честная рассрочка
                   <b>0.01%</b>
@@ -304,8 +305,8 @@
                   <path d="M29.75,9.3948,21.5281,1.1735a.8479.8479,0,0,0-.601-.261L20.9124.9119a.8526.8526,0,0,0-.5956.2409.8642.8642,0,0,0-.0027,1.23l6.7618,6.7611H.7316a.8566.8566,0,1,0,0,1.7131H27.0759l-6.7591,6.7591a.8576.8576,0,0,0-.0214,1.2113.8462.8462,0,0,0,.61.2583.8949.8949,0,0,0,.621-.2556l8.2233-8.224A.8587.8587,0,0,0,29.75,9.3948Z" transform="translate(0.125 -0.9119)"/>
                 </svg>
               </li>
-              <li class="block__btn btn --accent">
-                <span>Записаться на тест-драйв</span>
+              <li class="block__btn btn --accent" data-fancybox href="#modal">
+                <span>Узнать цену</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.125 18.1738">
                   <path d="M29.75,9.3948,21.5281,1.1735a.8479.8479,0,0,0-.601-.261L20.9124.9119a.8526.8526,0,0,0-.5956.2409.8642.8642,0,0,0-.0027,1.23l6.7618,6.7611H.7316a.8566.8566,0,1,0,0,1.7131H27.0759l-6.7591,6.7591a.8576.8576,0,0,0-.0214,1.2113.8462.8462,0,0,0,.61.2583.8949.8949,0,0,0,.621-.2556l8.2233-8.224A.8587.8587,0,0,0,29.75,9.3948Z" transform="translate(0.125 -0.9119)"/>
                 </svg>
@@ -320,8 +321,20 @@
           <img src="./img/bg-1.png" alt="#">
         </div>
       </section>
-      <div class="modal active"></div>
+      <div class="modal active" id="modal" style="display: none;">
+        <div class="modal__wrapper">
+          <div class="modal__title">Оставьте свой номер телефона</div>
+          <form class="modal__form">
+            <div class="modal__input">
+              <input type="tel" placeholder="Номер телефона">
+            </div>
+            <button class="btn modal__btn">Отправить</button>
+          </form>
+        </div>
+      </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./main.js"></script>
