@@ -203,6 +203,7 @@ body {
   color: transparent;
   position: absolute;
   top: 50%;
+  cursor: pointer;
 }
 
 .prev-btn {
@@ -710,6 +711,7 @@ ul {
   background-color: transparent;
   border-top: 3px solid #6a777f;
   border-left: 3px solid #6a777f;
+  cursor: pointer;
 }
 
 .btn-prev {
