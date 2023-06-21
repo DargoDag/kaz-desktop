@@ -239,7 +239,8 @@ body {
 .form__row {
   display: flex;
   align-items: center;
-  width: fit-content;
+  width: 674px;
+  position: relative;
 }
 
 .form__input {
@@ -283,7 +284,7 @@ body {
   margin-left: auto;
   width: fit-content;
   position: absolute;
-  left: 0;
+  right: 58px;
   bottom: -24px;
 }
 
