@@ -290,6 +290,7 @@ body {
 
 .form-control a {
   color: #fff;
+  text-decoration: underline;
 }
 
 input[type="checkbox"] {
